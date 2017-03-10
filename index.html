@@ -3,64 +3,115 @@
 
 <head>
 	<meta charset="utf-8" />
-
-	<title>iphone html</title>
-	<!--weather icons-->
-	<link rel="stylesheet" href="css/weatherIcons/weather-icons.min.css">
-	<!--font icons-->
-	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/iweather.css" type="text/css">
-	<style type="text/css">
-		html,
-		body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background: #000;
-		}
-		
-		#wrapper {}
-		
-		#iphone {
-			width: 372px;
-			height: 760px;
-			border-radius: 50px;
-			position: relative;
-			box-shadow: none;
-			margin: 5% auto;
-			background-image: url(img/iphone.jpg);
-			background-repeat: no-repeat;
-			background-size: 100%;
-		}
-		
-		#screen {
-			position: absolute;
-			background-color: #131314;
-			left: 27px;
-			top: 95px;
-			width: 320px;
-			height: 570px;
-		}
-	</style>
-
+	<title>Self Introduction</title>
+	<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 
 <body>
-	<div id="wrapper">
-		<div id="iphone">
-			<div id="screen">
-				<div id="myWeather">
+	<header>
+		<h1>Hello, I'm Alex. </h1>
+		<h2>A web developer in Xi'An China. I love music, reading, travel, sports and any funny things. <br/>I'm a good self learner. I think keep learning can make your life better.</h2>
+		<!--pre>
+			var done = false;
+			
+			function solveProblem(solved){
+				if(solved){
+					return;
+				}
+				try{
+
+				}catch(Error){
+				
+				}
+				solveProblem(solved);	
+			}
+		</pre 
+		-->
+	</header>
+	<div class="bg"></div>
+	<div class="mainCon" id="mainCon">
+		<div class="cubesContainer">
+			<div class="shadow"></div>
+			<div class="box">
+				<div class="front">
+					<div class="contentWrapper">
+						<h1>
+							What I do ?
+						</h1>
+					</div>
 				</div>
+				<div class="back">back</div>
+				<div class="left">left</div>
+				<div class="right">right</div>
+				<div class="top">top</div>
+				<div class="bottom">bottom</div>
+			</div>
+		</div>
+		<div class="cubesContainer">
+			<div class="shadow"></div>
+			<div class="box">
+				<div class="front">
+					<div class="contentWrapper">
+						<h1>
+							What I intersted?
+						</h1>
+					</div>
+				</div>
+				<div class="back">back</div>
+				<div class="left">left</div>
+				<div class="right">right</div>
+				<div class="top">top</div>
+				<div class="bottom">bottom</div>
+			</div>
+		</div>
+		<div class="cubesContainer">
+			<div class="shadow"></div>
+			<div class="box">
+				<div class="front">
+					<div class="contentWrapper">
+						<H5>Front</H5>
+					</div>
+				</div>
+				<div class="back">back</div>
+				<div class="left">left</div>
+				<div class="right">right</div>
+				<div class="top">top</div>
+				<div class="bottom">bottom</div>
 			</div>
 		</div>
 	</div>
-	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/aqi.js"></script>
-	<script type="text/javascript" src="./js/iweather.js"></script>
-	<script type="text/javascript" src="demo.js"></script>
+
+	<footer>
+		<div class="footerContainer">
+			<div class="contacts">
+				<div class="icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
+				<div class="text">13227707812</div>
+			</div>
+			<div class="contacts">
+				<div class="icon"><i class="fa fa-weixin fa-2x" aria-hidden="true"></i></div>
+				<div class="text" style="font-size:0;">
+					<div class="qrcode">
+						<img src="images/myQRcode.png" alt="WeChat ID: zihui_ta_father" />
+					</div>
+				</div>
+			</div>
+			<div class="contacts">
+				<div class="icon"><i class="fa fa-qq fa-2x" aria-hidden="true"></i></div>
+				<div class="text">120691771</div>
+			</div>
+			<div class="contacts">
+				<div class="icon"><i class="fa fa-google fa-2x" aria-hidden="true"></i></div>
+				<div class="text">weekendalex@gmail.com
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
-
-
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="./javascript/r.js">
+</script>
 </html>
