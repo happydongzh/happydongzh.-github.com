@@ -182,7 +182,7 @@ $(function($) {
             e.stopPropagation();
 			let orgTarget = $(this);
 			let pTarget = null;
-			orgTarget.siblings().each(function(i){
+			$('#certs div.contentWrapper>div').each(function(i){
 				if($(this).children().length == 0){
 					pTarget = $(this);
 				}
@@ -200,15 +200,14 @@ $(function($) {
                 transform: 'translateX(0)',
                 opacity: 1
             }).one('click', function(e) {
-				let b = $(this).children();//.detach();
-				b.detach();
-                //console.log(b == $(this));
                 $(this).css({
                     transform: 'translateX(-180%)',
                     opacity: 0
-                })
-				//orgTarget.append(b);
-				orgTarget.siblings().each(function(i){
+                });
+                let b = $(this).children();//.detach();
+                b.detach();
+                
+				$('#certs div.contentWrapper>div').each(function(i){
 					if($(this).children().length == 0){
 						//pTarget = $(this);
 						$(this).append(b);
