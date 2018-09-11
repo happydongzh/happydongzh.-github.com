@@ -11,7 +11,7 @@ body {
 header {
 	height: 200px;
 	width: 100%;
-	background-color: rgba(219, 76, 42, 0.46);
+	background-color: rgba(68, 68, 68, 0.5);
 	color: aliceblue;
 	text-align: center;
 	border-bottom-left-radius: 80%;
@@ -27,9 +27,10 @@ header h1 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: cornflowerblue;
+	/* background-color: cornflowerblue; */
 	background-image: url(../images/cup-of-coffee-1280537_1920.jpg);
 	background-repeat: no-repeat;
+	filter: brightness(0.5);
 	z-index: -1;
 	left: 0;
 	top: 0;
@@ -139,6 +140,71 @@ header h1 {
 	width: 100%;
 	overflow: hidden;
 }
+.contentWrapper > p{
+	margin: 0.8em auto;
+	font-size: .8em;
+}
+
+.contentWrapper > div{
+	text-align: left;
+	padding-left: 0.5em;
+	font-size: .8em;
+	margin-top: 5px;
+}
+.contentWrapper > div > div{
+	margin: 1em;
+}
+.contentWrapper > div > div > p{
+	margin: 0.5em;
+}
+.contentWrapper > div > div > p a{
+	font-size: 0.8em;
+	text-decoration: none;
+	color: white;
+}
+.contentWrapper > div > div > p a:hover{
+	font-weight: bold;
+}
+
+.skills > div > div{
+	margin: 0.5em 0.5em 0em 0.1em;
+    background-color: rgba(255, 255, 255, 0.35);
+    height: 5px;
+    position: relative;
+}
+.skills > div > div > span{
+	position: absolute;
+    margin-top: -20px;
+}
+
+.skills > div > div > div{
+	width: 80%;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+:visited{
+	color: white;
+}
+
+#certs >div > div{
+	height: 25%;
+}
+#certs >div > div:hover div{
+	border: 2px solid rgba(68, 68, 68, 0.5);
+}
+#certs >div > div >div{
+	width: 50%;
+	height: 90%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
 
 .enterFromLeft {
 	transform: translateZ(-100px) rotateY(25deg);
@@ -163,7 +229,7 @@ header h1 {
 	align-items: center;
 	position: fixed;
 	bottom: 1px;
-	background-color: rgba(68, 68, 68, 0.45);
+	background-color: rgba(68, 68, 68, 0.5);
 }
 
 .footerContainer .contacts {
@@ -226,10 +292,10 @@ header h1 {
 }
 
 .blur {
-	-webkit-filter: blur(10px);
-	-o-filter: blur(10px);
-	-moz-filter:blur(10px);
-	filter: blur(10px);
+	-webkit-filter: blur(10px) brightness(0.5);
+	-o-filter: blur(10px) brightness(0.5);
+	-moz-filter:blur(10px) brightness(0.5);
+	filter: blur(10px) brightness(0.5);
 }
 
 .test {
