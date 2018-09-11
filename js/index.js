@@ -1,6 +1,4 @@
 $(function($) {
-
-
     $('header h1').addClass('animated bounceIn');
     $('div.cubesContainer').addClass('animated bounceIn');
     $('header').addClass('test');
@@ -117,14 +115,14 @@ $(function($) {
 			});
 			if(pTarget != null){
 				console.log(pTarget.children().length)
-				let x = $('#test').children();
+				let x = $('#slide').children();
 				x.detach();
 				pTarget.append(x);
 			}
 
 			let c = $(this).children().detach();
 			$('div.cubesContainer').off('mouseleave', mouseOut);
-            $('#test').append(c).css({
+            $('#slide').append(c).css({
                 transform: 'translateX(0)',
                 opacity: 1
             }).one('click', function(e) {
