@@ -139,7 +139,19 @@ $(function($) {
         }
 
 
-    ];
+    ],
+
+    works = [
+        { name : 'iWeather', link: 'https://happydongzh.github.io/iweather/' },
+        { name : 'Gallery3D', link: 'https://happydongzh.github.io/Gallery3D/' },
+        { name : 'mVisualizer', link: 'https://happydongzh.github.io/mvisualizer/' },
+        { name : 'CubeShow', link: 'https://happydongzh.github.io/cubeShow/' },
+        { name : 'iClock', link:'https://happydongzh.github.io/clock/'},
+        { name : 'Calendar', link: 'https://happydongzh.github.io/calendar/'}
+    ],
+    certs = ['java.png', 'rhel.png', 'rhel2.png'];
+    
+    
     var _html = '';
     skills.forEach(function(v) {
         _html += '<div><br><div><span>' + v.name + '</span><div style="width:' + v.score + '%"></div></div></div>';
@@ -155,7 +167,14 @@ $(function($) {
         });
         $('#books').append(b);
     });
-    var certs = ['java.png', 'rhel.png', 'rhel2.png'];
+
+    works.forEach(function(v){
+        let  b = $('<div></div>');
+        b.html(v.name).on('click', function(e){
+            window.open(v.link);
+        });
+        $('#gitworks').append(b);
+    });
 
     certs.forEach(function(el) {
         let x = $('<div><div style="background-image:url(./images/' + el + ')"></div></div>');
