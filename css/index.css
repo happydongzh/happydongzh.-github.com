@@ -205,7 +205,21 @@ header h1 {
 	cursor: pointer;
 }
 
-
+#books{
+	margin: 0;
+	justify-content: flex-start;
+}
+#books >div{
+    background-repeat: no-repeat;
+    background-size: contain;
+	width: 3em;
+    height: 5em;
+	margin: 0.35em;
+	transition: all 300ms;
+}
+#books >div:hover{
+	transform: scale(1.3);
+}
 .enterFromLeft {
 	transform: translateZ(-100px) rotateY(25deg);
 }
