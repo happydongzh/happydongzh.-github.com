@@ -35,6 +35,10 @@ $(function($) {
             {
                 name: 'CSS',
                 score: 80
+            },
+            {
+                name: 'MySQL',
+                score: 75
             }
         ],
         books = [{
