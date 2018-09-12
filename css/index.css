@@ -217,9 +217,11 @@ header h1 {
 	height: 3.5em;
 	margin: 0.38em;
 	transition: all 300ms;
+	filter: brightness(0.5);
+	border-radius: 3px;
 }
 #books >div:hover{
-	transform: scale(1.3);
+	filter: brightness(1);
 }
 
 #gitworks{
@@ -232,6 +234,7 @@ header h1 {
 	margin: 1em 0;
 	color: white;
 	transition: all 300ms;
+	font-weight: bold;
 }
 #gitworks > div:hover{
 	transform: scale(1.2);
