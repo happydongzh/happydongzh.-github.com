@@ -2,30 +2,34 @@
 
 <head>
     <link rel="stylesheet" media="all" href="https://cdn.resume.io/assets/resume_template/stockholm-a3e1f08312ea641d4dc40015a2bcfb46e632556bb4fcda196c6d609d980fae33.css" />
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <meta charset="utf-8" />
     <meta content="noindex, nofollow" name="robots" />
     <script src="https://cdn.resume.io/assets/templates/application-3fdbf33742026326f2c30d99df001150d4a31d14fbd7ee5cfabcfaefcb7e8761.js"></script>
     <style>
-        body {
+        body{
             overflow: auto !important;
         }
-
+        .preview-box{
+            height: 100% !important;
+        }
         .setting--primary-background {
             background-color: #2196F3;
         }
-
+        
         .setting--primary-text {
             color: #2196F3;
         }
-
+        
         a {
             color: #2196F3;
             text-decoration: initial;
         }
-        .aside-group{
+        
+        .aside-group {
             padding-left: 2em;
         }
-
+        
         .certs {
             width: 100px;
             height: 100px;
@@ -34,15 +38,14 @@
             display: inline-block;
             transition: all 1s;
         }
-        .larger{
-            transform: scale(5);
-            z-index: 9;
-        }
-        .image-block{
-            border:solid 2px #2196F3;
+        
+        
+        .image-block {
+            border: solid 2px #2196F3;
             border-radius: 50% !important;
         }
-        #wechat{
+        
+        #wechat {
             background-image: url('./images/myQRcode.png');
             width: 20px;
             height: 20px;
@@ -50,6 +53,29 @@
             background-repeat: no-repeat;
             display: inline-block;
             transition: all 1s;
+            opacity: 0;
+        }
+        .social-profile > i{
+            transition: all 300ms;
+            cursor: pointer;
+        }
+        .social-profile > i:hover{
+            color: #2196F3;
+        }
+        .larger {
+            transform: scale(5);
+            z-index: 9;
+            opacity: 1 !important;
+        }
+
+        .experience-item  i{
+            color: #2196F3;
+            transform: all 300ms;
+            margin: 0 .5em;
+            cursor: pointer;
+        }
+        .experience-item i:hover{
+            color:black;
         }
     </style>
 </head>
@@ -60,11 +86,16 @@
             <div class="main">
                 <div class="personal-info-block">
                     <div class="image-block" style="background-image: url(./images/me.jpg)"></div>
+                    <div style="max-width: 200px;float: right;padding-top: 1em;">
+                        There are 1000+ frameworks out there, you can not learn everything, but I love to try something new and keep myself up-to-date. Keep learning and fight to the bugs will make me stronger and happy
+                    </div>
                     <div class="text-block">
                         <div class="name">Liyuan Dong</div>
                         <div class="current-position setting--primary-text">Software Engineer</div>
+
                         <div class="contacts">
                             <div class="city">XI&#39;AN, 710054, China</div>
+
                         </div>
                     </div>
                 </div>
@@ -74,9 +105,10 @@
                     </div>
                     <div class="experience-item">
                         <div class="item-description">
-                            <p>Try my best to do whatever related with job and do it best with full passion.
-                                    strong ability of self-learning, face to the challenges with positive attitude.
-                                    It's hard to tell my strengths, but I do know my weakness. With my experiences, skill set and self-learning ability, I believe that I could quickly understand and take the job responsibilities, go above and beyond on any project.</p>
+                            <p>
+                                Conscientious, strong sense of responsibility,high self-learning ability,problem-solving skills with many years of professional technologies experiences in enterprise web application development. Play a key role in an agile development team which focusing
+                                on application integration with HPC and web development.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +162,8 @@
 
                 <div class="experience-group">
                     <div class="group-title">
-                        <div class="group-title-icon education"></div>Cetifications
+                        <i class="fa fa-leanpub" aria-hidden="true" style="margin-left: -1.5em;transform: scale(0.6);"></i>
+                        Cetifications
                     </div>
                     <div class="experience-item" style="page-break-inside: avoid;">
                         <div class="certs" style="background-image:url(./images/java.png)">
@@ -142,6 +175,21 @@
                     </div>
                 </div>
 
+
+                <div class="experience-group">
+                        <div class="group-title">
+                            <i class="fa fa-github-alt" aria-hidden="true" style="margin-left: -1.5em;transform: scale(0.6);"></i>
+                            Repositories
+                        </div>
+                        <div class="experience-item" style="page-break-inside: avoid;">
+                            <a href="clock/index.html"><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i></a>
+                            <a href="calendar/index.html"><i class="fa fa-calendar fa-3x" aria-hidden="true"></i></a>
+                            <a href="iweather/index.html"><i class="fa fa-sun-o fa-3x" aria-hidden="true"></i></a>
+                            <a href="mvisualizer/index.html"><i class="fa fa-music fa-3x" aria-hidden="true"></i></a>
+                            <a href="Gallery3D/index.html"><i class="fa fa-picture-o fa-3x" aria-hidden="true"></i></a>
+                            <a href="cubeShow/index.html"><i class="fa fa-cube fa-3x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
             </div>
             <div class="aside">
                 <div class="aside-group details" style="padding-left:1em;">
@@ -169,13 +217,17 @@
                     <div class="title with-icon">
                         <div class="title-icon link"></div>Social Profiles
                     </div>
-                    <div class="social-profile">
-                        <a class="text setting--primary-text" href="https://github.com/happydongzh" target="_blank">
-                            Github: github.com/happydongzh</a>
-                        </div>
-                        <div class="social-profile">
-                                WeChat: <div id="wechat"></div>
-                                </div>
+                    <div class="social-profile" style="text-align: center">
+                            <i title="abclsdf wef wef wef " id="wechatIcon" class="fa fa-weixin fa-2x" aria-hidden="true" style="margin:0 1em;"></i>
+                            <i id="githubIcon" class="fa fa-github fa-2x" aria-hidden="true"></i>
+                            <div id="wechat"></div>
+                        <!-- <a class="text setting--primary-text" href="https://happydongzh.github.io/" target="_blank">
+                            https://happydongzh.github.io/</a> -->
+                    </div>
+                    <!-- <div class="social-profile">
+                        WeChat:
+                        
+                    </div> -->
                 </div>
                 <div class="aside-group">
                     <div class="title with-icon">
@@ -229,10 +281,7 @@
                         <div class="title-icon hobbies"></div>Hobbies
                     </div>
                     <div class="section">
-                        <div class="text">Read</div>
-                        <div class="text">Sports</div>
-                        <div class="text">Music</div>
-                        <div class="text">Travel</div>
+                        <div class="text">Read,Sports,Music,Travel</div>
                     </div>
                 </div>
                 <div class="aside-group">
@@ -240,6 +289,10 @@
                         <div class="title-icon languages"></div>Languages
                     </div>
                     <div class="section">
+                        <div class="text">Mandarin</div>
+                        <div class="progress">
+                            <div class="progress-inner setting--primary-background" style="width: 100%;"></div>
+                        </div>
                         <div class="text">English</div>
                         <div class="progress">
                             <div class="progress-inner setting--primary-background" style="width: 60%;"></div>
@@ -251,12 +304,18 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script>
-        $(function ($) {
-            $('div.certs').on('click',function(){
+        $(function($) {
+            $('div.certs').on('click', function() {
                 $(this).toggleClass("larger");
             });
-            $('#wechat').on('click',function(){
+            $('#wechatIcon').on('click', function() {
+                $('#wechat').toggleClass("larger");
+            });
+            $('#wechat').on('click', function() {
                 $(this).toggleClass("larger");
+            });
+            $('#githubIcon').on('click', function() {
+                window.open('index.html');
             });
         });
     </script>
