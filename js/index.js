@@ -221,7 +221,4 @@ $(function($) {
     $('a.book').on('click', function(e) {
         window.open($(this).attr('data-url'));
     });
-    $('a.resume').on('click', (e) => {
-        window.open('../images/CV_Liyuandong.pdf', '_blank');
-    });
 });
